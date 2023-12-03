@@ -1,2 +1,2 @@
 # DeadTyme_LC
-DeadTyme Lethal Company Modpack
+DeadTyme Extended Lethal Company Modpack
