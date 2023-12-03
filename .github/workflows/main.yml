@@ -1,0 +1,23 @@
+name: Publish Mod
+
+# Run when a new release is... released
+on: 
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      # Use checkout to publish the files in your repo
+      - uses: actions/checkout@v3
+      - uses: GreenTF/upload-thunderstore-package@v4.1
+        with:
+          namespace: DeadTyme # the thunderstore 'team' to publish under
+          description: DeadTyme Lethal Company Modpack 
+          token: ${{ secrets.THUNDERSTORE_SECRET }}
+          name: DeadTyme # the name of the package
+          version: v${{ github.ref_name }} # Use the tag as the package version
+          community: lethal-company
+          repo: thunderstore.io
+          categories: modpacks
