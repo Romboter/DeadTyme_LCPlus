@@ -2,7 +2,7 @@
     "name": "DeadTyme_Extended_Modpack",
     "version_number": "1.0.0",
     "website_url": "https://github.com/Romboter/DeadTyme_LCPlus",
-    "description": "An extedned modpack for DeadTyme Discord.",
+    "description": "An extended modpack for DeadTyme Discord.",
     "dependencies": [
         "NiceHairs-BetterMore-1.0.0",
         "Renegades-FlashlightToggle-1.3.1",
