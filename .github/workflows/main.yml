@@ -14,9 +14,9 @@ jobs:
       - uses: GreenTF/upload-thunderstore-package@v4.1
         with:
           namespace: DeadTyme # the thunderstore 'team' to publish under
-          description: DeadTyme Lethal Company Modpack 
+          description: DeadTyme Lethal Company Extended Modpack 
           token: ${{ secrets.THUNDERSTORE_SECRET }}
-          name: DeadTyme # the name of the package
+          name: DeadTymePlus # the name of the package
           version: v${{ github.ref_name }} # Use the tag as the package version
           community: lethal-company
           repo: thunderstore.io
